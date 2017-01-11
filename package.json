@@ -1,11 +1,12 @@
 {
   "name": "supermicrotemplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A super micro template engine",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marc Dix",
+  "repository": "https://github.com/mdix/supermicrotemplate",
   "license": "MIT"
 }
