@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/marcdix/.nvm/versions/node/v7.3.0/bin/node',
+1 verbose cli   '/Users/marcdix/.nvm/versions/node/v7.3.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v7.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/marcdix/Documents/webpage/github/supermicrotemplate',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/marcdix/.npm/supermicrotemplate/1.1.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/marcdix/.npm correctMkdir not in flight; initializing
+10 info lifecycle supermicrotemplate@1.1.1~prepublish: supermicrotemplate@1.1.1
+11 silly lifecycle supermicrotemplate@1.1.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/marcdix/.npm/supermicrotemplate/1.1.1/package.tgz',
+12 verbose tar pack   '/Users/marcdix/Documents/webpage/github/supermicrotemplate' ]
+13 verbose tarball /Users/marcdix/.npm/supermicrotemplate/1.1.1/package.tgz
+14 verbose folder /Users/marcdix/Documents/webpage/github/supermicrotemplate
+15 verbose addLocalTarball adding from inside cache /Users/marcdix/.npm/supermicrotemplate/1.1.1/package.tgz
+16 verbose correctMkdir /Users/marcdix/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd supermicrotemplate@1.1.1
+18 verbose afterAdd /Users/marcdix/.npm/supermicrotemplate/1.1.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/marcdix/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/marcdix/.npm/supermicrotemplate/1.1.1/package/package.json written
+21 silly publish { name: 'supermicrotemplate',
+21 silly publish   version: '1.1.1',
+21 silly publish   description: 'A super micro template engine',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   author: { name: 'Marc Dix' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/mdix/supermicrotemplate.git' },
+21 silly publish   license: 'MIT',
+21 silly publish   readme: '# Usage\nReally simple:\n\n## Node\n```javascript\nconst template = require(\'supermicrotemplate\')\ntemplate(\n    \'All _plc_ are replaced, even multiple _plc_. It is _sml_ and does one _thg_ well.\',\n    {_plc_: \'placeholders\', _sml_: \'small\', _thg_: \'thing\'})\n```\n## Require.js\nI\'m not sure. If you use require.js you probably know how to load it. ;)\n\n## Browser\n<script src="supermicrotemplate.js"></script>\n<script>\n    supermicrotemplate(\n        \'All _plc_ are replaced, even multiple _plc_. It is _sml_ and does one _thg_ well.\',\n        {_plc_: \'placeholders\', _sml_: \'small\', _thg_: \'thing\'})\n</script>\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'f84b2bd4ac68fb4d05e2fb8a14f2f8ea5d138bcf',
+21 silly publish   bugs: { url: 'https://github.com/mdix/supermicrotemplate/issues' },
+21 silly publish   homepage: 'https://github.com/mdix/supermicrotemplate#readme',
+21 silly publish   _id: 'supermicrotemplate@1.1.1',
+21 silly publish   _shasum: '3847b1f974c6b2537b2b2d8ca9c9098be9e026e5',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name supermicrotemplate
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'supermicrotemplate',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'supermicrotemplate',
+26 silly mapToRegistry   name: 'supermicrotemplate',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/supermicrotemplate
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/marcdix/.npm/supermicrotemplate/1.1.1/package.tgz
+30 verbose request uri https://registry.npmjs.org/supermicrotemplate
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 7:44:17 AM
+33 verbose request using bearer token for auth
+34 verbose request id 6292ed7c54ee1d44
+35 http request PUT https://registry.npmjs.org/supermicrotemplate
+36 http 403 https://registry.npmjs.org/supermicrotemplate
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '95',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Thu, 12 Jan 2017 06:44:18 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-fra1225-FRA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1484203457.409467,VS0,VE1068',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/marcdix/.npm/registry.npmjs.org/supermicrotemplate on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: "You cannot publish over the previously published version 1.1.1." : supermicrotemplate
+40 verbose stack     at makeError (/Users/marcdix/.nvm/versions/node/v7.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/marcdix/.nvm/versions/node/v7.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/marcdix/.nvm/versions/node/v7.3.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/marcdix/.nvm/versions/node/v7.3.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/marcdix/.nvm/versions/node/v7.3.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/marcdix/.nvm/versions/node/v7.3.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid supermicrotemplate
+43 verbose cwd /Users/marcdix/Documents/webpage/github/supermicrotemplate
+44 error Darwin 16.3.0
+45 error argv "/Users/marcdix/.nvm/versions/node/v7.3.0/bin/node" "/Users/marcdix/.nvm/versions/node/v7.3.0/bin/npm" "publish"
+46 error node v7.3.0
+47 error npm  v3.10.10
+48 error code E403
+49 error "You cannot publish over the previously published version 1.1.1." : supermicrotemplate
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
